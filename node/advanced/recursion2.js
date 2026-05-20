@@ -15,7 +15,7 @@ const tree = {
                             name: "Peter",
                             children: [{
                                 name: "peters kind",
-                                
+                                children:[]
                             }]
                         },
                     ]

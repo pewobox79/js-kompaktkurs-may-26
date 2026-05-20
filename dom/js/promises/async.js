@@ -39,6 +39,7 @@ async function init(){
     const res = await createPost({title: "post 3", body: "body post 3"})
     console.log("res", res)
     getPosts()
+
 }
 
 init()

@@ -6,9 +6,12 @@ function addStreet(obj){
  // 2. checken ob user_id existiert
  // 3. merge address mit user object
     let incomingObj = obj
+
+    const streetAddress = {street: "strassenname"}
+    const cityAddress = {city: "City"}
     incomingObj.address = {
-        street: "strassenamen",
-        city: "Ingolstadt"
+        ...streetAddress,
+        ...cityAddress
     }
     return incomingObj
 }

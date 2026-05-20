@@ -8,7 +8,7 @@ function add(){
 console.log(add())
 console.log(add())
 console.log(add())
-foo = 9999
+foo = 9999 // => manipulierte global variable
 console.log(add())
 console.log(add())
 

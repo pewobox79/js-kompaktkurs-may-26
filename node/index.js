@@ -7,11 +7,11 @@ const returnValue = formatCarList("lkajdfs", myColorsArray)
 
 console.log("returnvalue", returnValue) */
 
-import auto from './store/store2.js'
-console.log("stored values", auto)
+import myStoreValues from './store/store2.js'
+console.log("stored values", myStoreValues)
 
-import store1Values from "./store/store.js";
-console.log("store 1 values", store1Values)
+import { myListOfCars, myColorsArray } from "./store/store.js";
+console.log("store 1 values", myColorsArray)
 
 import express from 'express'
 const app = express()

@@ -13,7 +13,7 @@ const BASE_CONFIG = {
 function createElement(singleToDo) {
 
     //destructure object mit alias bei title
-    const { title:Todo, userId, completed } = singleToDo
+    const { title: Todo, userId, completed } = singleToDo
 
     //create Elements in JS
     const section = document.createElement("section")
@@ -32,8 +32,9 @@ function createElement(singleToDo) {
 
 }
 
-function returnElements(data) {
-
+async function returnElements() {
+    const data = await getToDosFromApi()
+    console.log("list", data)
     if (!Array.isArray(data)) return
     data.forEach(todo => {
         createElement(todo)
@@ -41,7 +42,7 @@ function returnElements(data) {
     })
 }
 
-function getToDosFromApi() {
+async function getToDosFromApi() {
     const URL = `${BASE_URL}todos`
     /**
      * SPREAD OPERATOR <...>
@@ -49,20 +50,11 @@ function getToDosFromApi() {
         method: "GET",
         ...BASE_CONFIG
     }*/
-    fetch(URL)
-        .then(response => {
-            if(!response.ok){
-                throw Error("error")
-            }
-
-            return response.json()
-        })
-        .then(data => {
-
-            returnElements(data)
-
-        })
+    const response = await fetch(URL)
+    console.log("res", response)
+    if (!response.ok) {
+        throw Error("fehler")
+    }
+    return await response.json()
 
 }
-
-getToDosFromApi()
