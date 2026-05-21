@@ -24,4 +24,23 @@ class User extends Job {
 
 }
 
+export class Auto {
+    constructor(marke, modell, baujahr) {
+        this.marke = marke
+        this.modell = modell
+        this.baujahr = baujahr
+    }
 
+    startCar() {
+        console.log(`ich starte meinen ${this.marke}`)
+    }
+
+    stopCar() {
+        console.log('stop the car')
+    }
+}
+
+Auto.prototype.changeCarProto = function () {
+    console.log(`changed the car via proto ${this.marke}`)
+}
+Object.freeze(Auto.prototype) //=> sperrt das Object prototype für veränderungen

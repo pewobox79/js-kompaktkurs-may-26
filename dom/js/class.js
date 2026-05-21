@@ -52,7 +52,7 @@ class Auto {
         this.baujahr = baujahr
     }
 
-    startCar(){
+    static startCar(){
         console.log(`ich starte meinen ${this.marke}`)
     }
 
@@ -60,7 +60,7 @@ class Auto {
         console.log('stop the car')
     }
 }
-
+Object.freeze(Auto.prototype)
 const auto3 = new Auto("Porsche", "911", "2015")
 console.log("auto3", auto3.hasOwnProperty("startCar"))
 console.log("prototype auto3", Object.getPrototypeOf(auto3))

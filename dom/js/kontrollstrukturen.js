@@ -31,6 +31,16 @@ switch (true) {
     default: console.log("default")
 }
 
+let weekDay = "Montag"
+
+switch(weekDay){
+    case "Montag": {
+        console.log(`es ist ${weekDay}`)
+        break;
+    }
+    default: console.log("Wochenende!!")
+}
+
 
 //schleifen
 //for-schleife
