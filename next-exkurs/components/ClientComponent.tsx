@@ -1,10 +1,10 @@
 'use client'
-import { useState, useEffect } from "react"
+import { useState, useEffect, ReactNode } from "react"
 import { getUser } from "@/lib/placeholder/placeholder"
 import GlobalImage from "./globals/GlobalImage"
 import image from '@/assets/images/pixabay-bild.png'
 
-export default function ClientComponent({children}) {
+export default function ClientComponent({children}:{children: ReactNode}) {
     console.log("client component")
     const [users, setUsers] = useState([])
 
