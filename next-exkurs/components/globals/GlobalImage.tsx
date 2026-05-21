@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 export default function GlobalImage({url, alt, size = "large"}:{url: string, alt:string, size?: "small" | "large"}) {
-
+console.log("image rendering")
     if(!url) return
 
     const isLargeImage = size === "large"
