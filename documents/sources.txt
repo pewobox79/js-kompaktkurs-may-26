@@ -2,3 +2,8 @@
 https://jsonplaceholder.typicode.com/
 
 
+#VITE - React tooling environment
+https://vite.dev/guide/
+
+
+

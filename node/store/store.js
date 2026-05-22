@@ -1,4 +1,3 @@
-const myListOfCars = ["Audi", "Mercedes", "Porsche", "VW"]
-const myColorsArray = ["red", "white", "blue", "green"]
+export const myListOfCars = ["Audi", "Mercedes", "Porsche", "VW"]
+export const myColorsArray = ["red", "white", "blue", "green"]
 
-export default {myColorsArray, myListOfCars}
