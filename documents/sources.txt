@@ -1,9 +1,26 @@
+#expressjs
+https://expressjs.com/en/5x/guide/routing/
+
 #Test APIs 
 https://jsonplaceholder.typicode.com/
 
 
 #VITE - React tooling environment
 https://vite.dev/guide/
+
+#AXIOS - alternative zu FetchAPI
+https://github.com/axios/axios
+
+#TESTING
+#react testing library
+https://testing-library.com/docs/react-testing-library/intro/
+
+#playwrite
+https://playwright.dev/docs/intro
+
+
+#webworker
+https://www.youtube.com/watch?v=Gcp7triXFjg
 
 
 
